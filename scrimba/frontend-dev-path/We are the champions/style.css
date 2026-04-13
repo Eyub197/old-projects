@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1B1924;
+    display: grid;
+    place-items: center;
+}
+
+
+main{
+    max-width: 320px;
+    margin: 5em 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+img{
+    width: 180px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #ffffff;
+}
+
+li, ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+textarea{
+    background-color: #444059;
+    border: none;
+    border-radius: 4pt;
+    resize: none;
+    align-self: stretch;
+
+}
+
+button{
+    font-size: 1.1rem;
+    background-color: #28A9F1;
+    border: none;
+    padding: 1em;
+    font-weight: bold;
+    border-radius:4pt;
+    align-self: stretch;
+}
+
+#mine{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1em;
+    max-width: 320px;
+}
+
+.newP{
+    background-color: white;
+    padding: 1em;
+    color: #1B1924;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+
+

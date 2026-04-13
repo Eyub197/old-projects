@@ -1,0 +1,53 @@
+/* ===Changes===
+=================== */
+.profile{
+    padding: 0.5em;
+}
+
+.profile-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "img img"
+    "title title"
+    "profileText profileText";
+    margin-bottom: 3em;
+}
+
+.funny-img{
+    grid-area: img;
+    border-radius: 50%;
+    width: 280px;
+}
+
+.profile-title{
+    grid-area: title;
+    color: #151515;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.profile_text{
+    grid-area: profileText;
+}
+
+@media (min-width:720px) {
+    .profile-container{
+    grid-template-areas: 
+    "img title"
+    "img profileText";
+    }
+    
+    .profile-container{
+        padding: 2em;
+    }
+
+    .profile-title{
+        align-self: end;
+    }
+
+    .funny-img{
+        width: 400px;
+    }
+    
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polly Glot</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>PollyGlot</h1>
+      <p class="subheadline">Perfect translation every time</p>
+      <img src="parrot.png" alt="parrot" class="parrot">
+    </header>
+    <span>
+      <main>
+        <form>
+  
+          <label for="text">Text to translate 👇</label>
+          <textarea rows="5" class="user-input" name="text" id="text" placeholder="How are you?"></textarea>
+          
+          <label for="languages">Select a language 👇</label>
+
+          <div class="loading hidden"></div>
+          <section class="languages-answer">
+            <label class="radio-option">
+              <input type="radio" name="language" id="language" value="french"> 
+              <span class="radio-text">French</span>
+              <img src="fr-flag.png" alt="France's flag">
+            </label>
+            
+            <label class="radio-option">
+              <input type="radio" name="language" id="language" value="spanish">
+              <span class="radio-text"> Spanish</span>
+              <img src="sp-flag.png" alt="Spain's flag">
+            </label>
+            
+            <label class="radio-option">
+              <input type="radio" name="language" id="language" value="japanese">
+              <span class="radio-text"> Japanese</span>
+              <img src="jpn-flag.png" alt="Japan's flag">
+            </label>  
+          </section>
+
+          <button class="btn cta">Translate</button>
+          <button class="btn reset hidden">Start over</button>
+        
+        </form>
+
+      </main>
+    <script type="module" src="/src/main.ts"></script>
+  </div>
+</html>

@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Smythe", sans-serif;
+    font-size: 1rem;
+} 
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.radius{
+    border-radius: 5pt;
+}
+
+/* Typography */
+
+h1{
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h4, .your-order{
+    margin-bottom: 1.5em;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.your-order{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+/* HEADER */
+
+header{
+    background-image: url("burger.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    color: white;
+}
+/* Section */
+
+.grid{ 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.food{
+    grid-template-areas: 
+    "emoji name add"
+    "emoji ingredients add"
+    "emoji price add";
+    border-bottom: 1px solid gray;
+    padding: 1em 0;
+}
+
+.emoji{
+    grid-area: emoji;
+    align-self: end;
+    justify-self: start;
+    margin-right: 0.5em;
+    font-size: 3.5rem;
+    margin-top: 1em;
+}
+
+.food-name{
+    grid-area: name;
+    align-self: end;
+    font-size: 1.5rem; 
+    margin-bottom: 0;
+}
+
+.food-ingredients{
+    grid-area: ingredients;
+    align-self: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.price{
+    margin-top: 0;
+    grid-area: price;
+    align-self: start;
+}
+
+.icon{
+    grid-area: add;
+    justify-self: end;
+    align-self: center;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+/* ======== order
+ ===========*/
+
+.order{
+    grid-template-areas: 
+    "food removee price";
+}
+
+.order-name{
+    grid-area: food;
+    align-self: end;
+    margin-right: .5em;
+    margin-bottom: .4em;
+    font-size: 1.6rem;
+}
+
+.remove{
+    grid-area: removee;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.end-price, .order-price{
+    font-weight: bold;
+}
+
+.order-price{
+    grid-area: price;
+    align-self: end;
+}
+
+.buy-order{
+    border-top: 1px solid gray;
+}
+
+.end-price{
+    margin-top: 1em;
+}
+
+.buy-order-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-btn-container{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2em;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+/* MOdal */
+
+.modal{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+    height: 450px;
+    max-width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.pay, input{
+    padding: 1.5em;
+}
+
+input{
+    border: 1px solid gray;
+}
+
+.btn{
+    transition: all 0.7s ease;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.pay{
+    margin: 1em 0;
+}
+
+.buy{
+    width: 100%;
+    padding: 1em 0;
+}
+
+.modal-text{
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    background-color: none;
+}

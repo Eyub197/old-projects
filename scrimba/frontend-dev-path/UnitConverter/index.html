@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Unit converter</title>
+</head>
+<body>
+    <section class="hero flex">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <h3 class="hero-desc">Metric/Imperial unit conversion</h3>
+        <input type="text" class="hero-num" value="1"/>
+        <button>Convert</button>
+    </section>
+    <main class="converter flex dark-mode">
+      <ul class="units">
+        <li class="unit">
+            <h4 class="converter-title metric-feet">Length (Meter/Feet)</h4>
+            <p class="converter-numbers metric-feet-numbers">This is here just for purees</p>
+        </li>
+        <li class="unit">
+            <h4 class="converter-title liters-galons"  >Volume (Liters/Gallons)</h4>
+            <p class="converter-numbers liters-gallons-numbers">This is here just for purees</p>
+        </li>
+        <li class="unit">
+            <h4 class="converter-title kilos-pounds">Mass (Kilograms/Pounds)</h4>
+            <p class="converter-numbers kilos-pounds-numbers">This is here just for purees</p>
+        </li>
+      </ul>
+         </main>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

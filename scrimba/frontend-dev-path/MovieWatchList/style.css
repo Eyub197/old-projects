@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Typography 
+===============*/
+
+h1{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.change_page{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.placeholder_text{
+    font-size: 1.125rem;
+    /* color: #2E2E2F; */
+    color: red;
+}
+
+.movie_title{
+    font-size: 1.125rem;
+}
+
+.star{
+    color: #FEC654;
+    font-size: 1rem;
+}
+
+.rating, .duration, .genre, .watch_list{
+    font-size: 0.75rem;
+}
+
+.plot{
+    font-size: 0.875rem;
+    color: #A5A5A5;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Layout 
+============*/
+
+/* header */
+
+header{
+    background-image: url("/images/main_img.png");
+    height: 300px;
+    background-size: cover;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+
+/* search  bar */
+.search_bar{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 7em auto;
+ }
+
+.search_bar_icon{
+    width: 16px;
+    color: #9CA3AF;  
+    padding: 1.2em;
+}
+
+input[type="text"], .search_bar_icon{
+    background-color: #2E2E2F;
+}
+
+input[type="text"], .btn{
+    border: none;
+    border-radius: 2pt;
+}
+
+input[type="text"]{
+    flex: 13 1 0;
+    padding: 0.5em 1em;
+    text-align: left;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #9CA3AF;
+}
+
+
+.btn{
+    flex: 1 1 0;
+    background-color: #4B4B4B;
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.5em 5em;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* movies */
+
+.movies{
+   margin-top: 7em;
+   display: grid;
+ 
+}
+
+.movie{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "img main_info"
+    "img secondary_info"
+    "img plot";
+    margin-bottom: 2em;
+    padding: 2em;
+    border: 1px solid red;
+}
+
+.movie div {
+    display: flex;
+}
+
+.movie img{
+    height: 100%;
+    grid-area: img;
+    width: 120px;
+    align-self: start;
+    display: block;
+    margin-right: 1em;
+}
+
+.main_info, .secondary_info{
+    align-items: center;
+    gap: 1em;
+}
+
+.main_info{
+    grid-area: main_info;
+}
+
+.secondary_info{
+    grid-area: secondary_info;
+}
+
+.plot{
+    grid-area: plot;
+    width: 90%;
+}
+
+.placeholder_search{
+    text-align: center;
+}
+
+i.add, i.remove{
+    cursor: pointer;
+}

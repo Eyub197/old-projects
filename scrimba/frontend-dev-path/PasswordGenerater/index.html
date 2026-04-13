@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <i class="far fa-circle"></i>
+        <h1>Generate a</h1>
+        <h3>Random password</h3>
+        <p>Never use a insecure password again</p>
+        <section class="optional">
+            <button>Generate password</button>
+                <div class="col">
+                    <label for="pLength">password length<span>(optional)</span></label>
+                    <input type="text" class="length" id="pLength" >
+                        <div class="row">
+                            <label for="nOff" class="check-boxL">Without numbers</label>
+                            <input type="checkbox" name="numbersOff" id="nOff">
+                            <label for="nOff" class="check-boxL">Without symbols</label>
+                            <input type="checkbox" name="symbolsOn" id="sOff">
+                    </div>
+                </div>
+
+        </section>
+        <hr>
+        <section class="passwords">
+            <input type="text" name="password1" class="first-password">
+            <input type="text" name="password2" class="second-password">
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* ====CHANGES===
+=================== */
+*{
+    box-sizing: border-box;
+}
+
+.main-article{
+    background-image: unset;
+    height: unset;
+}
+
+
+img{
+    display: block;
+}
+
+.main-article > *,
+p.header_text{
+    color: #151515;
+}
+
+span{
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+@media (min-width:920px) {
+  .text-container,
+  .header_text,
+  .header_date,
+  .main-article-text{
+    margin-left: 3rem;
+  }
+
+  .header_date{
+    margin-left: 3.2rem;
+  }
+
+  .text-container{
+    margin-top: 2em;
+  }
+}

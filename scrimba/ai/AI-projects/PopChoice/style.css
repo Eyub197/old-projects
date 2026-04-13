@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #3B4877;
+    --cta-color: #51E08A;
+    --background-color: #000C36;
+}
+
+*, *::before { box-sizing: border-box; }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    background-color: var(--background-color);
+    color: white;
+}
+
+button, 
+textarea,
+input[type="text"] {
+    font-family: inherit;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+/* btn */
+
+button {
+    font-size: 1.875rem;
+    padding: 0.5em 1em;
+    background-color: var(--cta-color);
+}
+
+
+/* typography */
+
+h1 {
+    font-family: "Carter One", cursive;
+    font-size: 2.8125rem;
+    margin-top: 0;
+}
+
+
+/* layout */
+
+main {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.custom-radio-wrapper-1, .custom-radio-wrapper-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "question"
+        "answers";
+    gap: 0.45em;
+}
+
+.new-classic, .film-types {
+   grid-area: answers;
+   display: flex;
+   gap: 1em;
+}
+
+/* forms */
+
+.person-form {
+    padding: 2em;
+    text-align: left;
+}
+
+.first-labels{
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 0.4em;
+}
+
+input, textarea {
+    background-color: var(--primary-color);
+}
+
+input[type="text"], textarea {
+    color: white;
+}
+
+input[type="text"] {
+    padding: 1.4em;
+}
+
+textarea {
+    resize: none;
+    padding: 0.75rem;
+}
+
+.custom-radio {
+    font-size: 0.875rem;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 0.7em auto;
+} 
+
+input[type="radio"] {
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    display: grid;
+    place-content: center;
+    margin: 0;
+    width: 3rem;
+    height: 1.3rem;
+    font: inherit;
+    transform: translateY(-0.2em);
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 3.2rem;
+    height: 1.2rem;
+    border-radius: 0.3rem;
+    box-shadow: inset 2em 4em var(--cta-color);
+    transition: 120ms transform ease-in-out;
+    transform: scale(0);
+    z-index: -2;
+}
+
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid var(--cta-color);
+    outline-offset: max(2px, 0.15em);
+}
+
+input[type="radio"]:checked::before { transform: scale(1); }
+
+input.classic-input, input.classic-input::before { width: 4.7em; }
+input.serious-input, input.serious-input::before { width: 4.9em; }
+input.inspiring-input, input.inspiring-input::before { width: 5.8em; }
+input.scary-input, input.scary-input::before { width: 4.2em;  }
+
+/* utils */
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vh100-grid {
+    display: grid;
+    place-content: center stretch;
+    min-height: 100vh;
+}

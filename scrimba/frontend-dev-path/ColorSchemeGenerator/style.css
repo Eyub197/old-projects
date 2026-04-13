@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===selection===
+==================== */
+
+.selection{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+}
+
+button{
+    padding: 0.5em;
+    border-radius: 5pt;
+    border: 1px solid #D1D5DB;
+    background-color: inherit;
+}
+
+button{
+    font-size: 0.75rem;
+    color: #374151;
+}
+
+input{
+   border: 0.5px solid #313131;
+   border: none;
+   height: 40px;
+}
+
+/* Colors */
+
+ul.colors{
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0.2em;
+}
+
+.color{
+    height: 90%;
+}
+
+ul.colors li{
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 20%;
+}
+
+ul li p{
+    text-align: center;
+}
+
+/* helper class */
+
+.copy{
+    padding: 0.5em 2em;
+    border-radius: 2pt;
+    display: none;
+    width: 20%;
+    color: white;
+    background-color: #313131;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.copy-active{
+    display: block;
+}
+
+.copy-animation {
+    animation: show-copy 2.5s ease 2 alternate;
+    overflow: hidden;
+}
+
+@keyframes show-copy {
+    from{transform: translateY(10px)}
+    to{transform: translateY(-200px)}
+}
+/* dropdown menu */
+
+/* .dropDown{
+    position: relative;
+    margin: 2em;
+    flex: 1 1 auto;
+} */
+
+.select {
+    background: #2a2f3b;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #2a2f3b;
+    border-radius: 2pt;
+    padding: 0.5em ;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 300px;
+}
+
+.select-clicked {
+    border: 2px solid #26489a;
+    box-shadow: 0 0 0.8em 26489a;
+}
+
+.select:hover{
+    background: #323741;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px solid #363a43;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 40%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #2a2d35;
+}
+
+.active{
+    background: #23243a;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+

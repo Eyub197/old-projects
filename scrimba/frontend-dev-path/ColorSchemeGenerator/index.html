@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+    <main>
+
+        <section class="selection">
+            <input type="color" name="color" id="color">
+            <div class="dropdown">
+                <div class="select">
+                <span class="selected">Monochrome</span>
+                <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li data-mode="monochrome" class="active">Monochrome</li>
+                    <li data-mode="monochrome-dark">Monochrome-dark</li>
+                    <li data-mode="monochrome-light">Monochrome-light</li>
+                    <li data-mode="analogic">Analogic</li>
+                    <li data-mode="complement">Complement</li>
+                    <li data-mode="analogic-complement">Analogic-complement</li>
+                    <li data-mode="triad">Triad</li>
+                </ul>
+        </div>
+        <button>Generate Color Pattern</button>
+        </section>
+
+        <ul class="colors">
+            <li>
+                <div class="color copied"></div>
+                <p class="fex">#5465675</p>
+            </li>
+            <li>
+                <div class="color"></div>
+                <p class="fex">#5465675</p>
+            </li>
+            <li>
+                <div class="color"></div>
+                <p class="fex">#5465675</p>
+            </li>
+            <li>
+                <div class="color"></div>
+                <p class="fex">#5465675</p>
+            </li>
+            <li>
+                <div class="color"></div>
+                <p class="fex">#5465675</p>
+            </li>
+
+        </ul>
+       
+        <p class="copy">copied</p>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.user-avatar, .avatar{
+    border-radius: 50%; 
+    align-self: center;
+}
+
+    /* layout */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.user-avatar{
+    width: 45px;
+    justify-self: end;
+}
+
+.logo{
+    width: 170px;
+}
+
+    /*post-profile*/
+
+
+.post-profile{
+    display: grid;
+    grid-template-columns: 1em auto 1fr 1em;
+    grid-template-areas: 
+    ". img name ."
+    ". img loca .";
+}
+
+.avatar{
+    grid-area: img;
+    width: 50px;
+    margin-right: 1em;
+}
+
+.name{
+    grid-area: name;
+    margin-bottom: 0;
+}
+
+.location{
+    grid-area: loca;
+    margin-top: 0;
+}
+
+    /* stats */
+
+.stats{
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+.img-container{
+    display: flex;
+    gap: 1em;
+}
+
+.comment{
+    margin-top: 0;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.social-img{
+    width: 30px;
+    transition: all 0.7s ease;
+}
+
+.social-img:hover{
+    transform: scale(1.2);
+}
+
+.post{
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.post:last-of-type{
+    border: none;
+}
+
+
+button{
+    padding: 0;
+    background-color: inherit;
+    color: none;
+    border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
+.stats{
+    display: grid;
+    grid-template-columns: 1em repeat(3, auto) 1em;
+    grid-template-areas: 
+    ". heart dm commentI ."
+    ". likes likes likes ."
+    ". comment comment comment .";   
+    margin-top: 1em; 
+}
+
+.heart{
+    grid-area: heart;
+    justify-self: start;
+}
+
+.dm{
+    grid-area: dm;
+}
+
+.send-comment{
+    grid-area: commentI;
+    justify-self: start;
+}
+
+.likes{
+    grid-area: likes;
+}
+
+.comment{
+    margin-top: 0;
+    grid-area: comment;
+}
+
+.social-img{
+    width: 35px;
+}
+*/
+
+
+
