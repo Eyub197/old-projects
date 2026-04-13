@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Fix the buttons styles*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 1000px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color:#FC2E20;
+    font-weight: bolder;
+    
+}
+    /* Sketch */
+
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 600px;
+    border: 35px solid #FC2E20;
+    box-sizing: content-box;
+    border-radius: 15pt;
+    margin: 030px;
+}
+
+.grid-item{
+    display: flex;
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+}
+
+    /* Sketch */
+
+    /* left-side-Buttons */
+
+.left-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    justify-content: space-around;
+    width: 500px;
+}
+
+.left-buttons > button{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 8pt;
+    border: none;
+    background-color: #dad7cd;
+    font-weight: bolder;
+    font-size:16px;
+}
+
+.left-buttons > button:hover{
+    opacity: 0.5 ;
+}
+
+    /* left-side-Buttons */
+
+    /*right-side- buttons*/
+
+.right-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    justify-content: space-around;
+    width: 500px;
+    }  
+
+.right-buttons > button{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 8pt;
+    border: none;
+    background-color: #dad7cd;
+    font-weight: bolder;
+    font-size:16px;
+}
+
+.right-buttons > button:hover{
+    opacity: 0.5;
+}
+
+input{
+    border: none;
+}
+
+/*right-side- buttons*/
