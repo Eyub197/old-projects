@@ -1,0 +1,176 @@
+:root{
+    --background-color: #faedcd
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Roboto', sans-serif; */
+    font-family: sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+main, .svg-container{
+    display: flex;
+}
+
+    /*Left side*/
+
+.img-container{   
+    width: 40vw;
+    background-image: url(form-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.svg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 40%;
+    padding: 20px;
+    background-color: rgba(250, 237, 205, 0.5);
+}
+
+.svg-text{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+        /*left side*/
+
+        /*right side-text*/
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    gap: 10px;
+    background-color: var(--background-color);
+}
+
+.text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:  flex-start;
+    height: 20vh;
+    width: 100%;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.text >  p {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #54627B;
+}
+
+    /*right side-text*/
+
+  
+    /*form*/
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 50vh;
+    gap:10px;
+    padding: 20px;
+    color: #710117;
+}
+
+.form-text{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #710117;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap; 
+}
+
+
+input{
+    width: 500px;
+    height: 55px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10pt; 
+    transition: border-color 0.5s ease; /* Apply transition to border-color */
+}
+
+
+input:focus{
+    border: 4px solid #54627B;
+    outline: none;
+}
+
+input:invalid + p::after{
+   content: 'X';
+   color: red;
+}
+
+input:valid{
+    border-color: 3px solid green;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.sign-in > button{
+   width: 160px;
+   height: 70px;
+   font-size: 2rem;
+   background-color: inherit;
+   border-radius: 10pt;
+   border: 1px solid black ;
+   transition: background-color 0.5s ease;
+}
+
+.sign-in > button:hover{
+    background-color: #710117;
+    border: 1px solid white;
+    color: white;
+}
+
+.sign-in > p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+a:hover{
+    color:#710117;
+    transform: scale(1.5);
+}
+
+/*form*/

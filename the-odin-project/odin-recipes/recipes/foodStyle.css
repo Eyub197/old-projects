@@ -1,0 +1,26 @@
+*{
+    background: beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+    text-decoration: none;
+    
+}
+
+img{
+    height: auto;
+    width: 300px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.links
+{
+   justify-content: flex-start;
+}
+
+a{
+    color: firebrick;
+}

@@ -1,0 +1,115 @@
+*{
+    background-color: beige;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    display: flex;
+}
+
+/*Rice and chicken*/
+
+.Rice-and-Chicken-card{
+    
+    border: 5px solid #F5FEFD;
+    border-radius: 10pt;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+}
+
+.Rice-and-Chicken-card > h2{
+    text-align: center;
+    border-radius: 10pt;
+    padding: 10px;
+}
+
+.Rice-and-Chicken-card> img{
+    border-radius: 10pt;
+    margin-left: 6px;
+    margin-bottom: 30px;
+}
+
+.Rice-and-Chicken-card > button{
+    padding: 10px;
+    border-radius: 10pt;
+    border-color: blueviolet;
+    margin-left: 40px;
+    border-width: 6px;
+    border-color: #8ecae6;
+} 
+
+/*Baklava*/
+
+.Baklava-card{
+    border: 5px solid #bc6c25;
+    width: 250px;
+    height: 400px;
+    border-radius: 10pt;
+    margin: 10px;
+}
+
+.Baklava-card > img {
+    width: 240px;
+    height: auto;
+    border-radius: 10pt;
+}
+
+.Baklava-card > h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+
+.Baklava-card > button{
+    padding:15px;
+    margin-top: 50px;
+    border-radius: 10pt;
+    border-width: 6px;
+    margin-left: 70px;
+    border-color: #dda15e;
+}
+
+
+/*fired eggs card*/
+
+.eggsCard {
+    border: 5px solid #ffb703;
+    width: 250px;
+    
+    height: 400px;
+    border-radius: 10pt;
+    margin: 10px;
+}
+
+.eggsCard > h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.eggsCard > img {
+    width: 180px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.eggsCard > button{
+    padding:15px;
+    margin-top: 5px;
+    border-radius: 10pt;
+    border-width: 6px;
+    margin-left: 70px;
+    border-color: #e5e5e5;
+}

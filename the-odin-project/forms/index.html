@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Sk-Forms</title>
+</head>
+<body>
+    <main>
+        <div class="img-container"> 
+            <div class="svg-container">
+                <img src="skateboard.svg" alt="SVG Image">
+                <h1 class="svg-text">YOU GOT THIS</h1>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="text">
+                <p>This is not a real online service! You know you need something</p>
+                <p>like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up to get started.</p>
+                <br>
+                <p>You know you want to.</p>
+            </div>
+
+            <form action="#">
+                <p class="form-text">Lets dance</p>
+                <div class="form">
+
+                    <div class="input">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first_name" id="first-name" required minlength="1">
+                        <span></span>
+                    </div>
+
+                    <div class="input">
+                        <label for="sir-name">Sir name</label>
+                        <input type="text" name="sir_name" id="sir-name" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email;" name="email" id="email" required placeholder="StayHard@gmail.com" minlength="11"  >
+                    </div>
+
+                    <div class="input"> 
+                        <label for="phoone-number">Phone number</label>
+                        <input type="number" name="phone_number" id="phone_number" required minlength="9" >
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="user_password" id="password" minlength="8" required>
+                        <p class="password"></p>
+                    </div>
+
+                    <div class="input">
+                        <label for="confrim-password">Confirm password</label>
+                        <input type="password" name="confirm_user_password" id="confirm-password" minlength="8" d>
+                        <p class="confirm_password"></p>
+                    </div>
+
+                </div>
+                <div class="sign-in">
+                    <button type="submit">Submit</button>
+                    <p>Have a account <a href="https://youtu.be/7YZCUpnaTfg">sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </main> 
+    <script src="app.js"></script>
+</body>
+</html>
