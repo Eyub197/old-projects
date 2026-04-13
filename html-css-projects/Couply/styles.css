@@ -1,0 +1,598 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    padding-left: 2.375em;
+    padding-right: 2.375em;
+}
+
+.offer:first-of-type { background-image: url("./assets/woman-shoes.jpg"); }
+.offer:nth-of-type(2) { background-image: url("./assets/arrows.jpg"); }
+.offer:nth-of-type(3) { background-image: url("./assets/headphones.jpg"); }
+.offer:nth-of-type(4) { background-image: url("./assets/high-heels.jpg"); }
+.offer:nth-of-type(5) { background-image: url("./assets/tropic-vibe.jpg"); }
+.offer:last-of-type { background-image: url("./assets/product.jpg"); }
+
+/* =================
+    Utilities 
+==================*/
+
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 0 0 black;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+}
+
+/* ===btns=== */
+
+button {
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.view-more-btn {
+    background-color: unset;
+    border: none;
+    gap: 0.8em;
+    text-decoration: underline;
+}
+
+
+.primary-cta {
+    margin-top: 2em;
+    border: 2px solid black;
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 0.6em 0;
+    width: 100%;
+    border-radius: 0.2em;
+    background-color: #9BC588;
+}
+
+.secondary-cta {
+    gap: 0.3em;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background-color: #C6DBBD;
+    border-radius: 0.2em;
+}
+
+
+/* === Typography === */
+
+.nav-list-item a, .email {
+    color: black;
+}
+
+small, .email {
+    font-size: 0.875rem;
+}
+
+.user-text, h3, .testimonial-quote{
+    font-weight: normal;
+}
+
+h1, h4, h3 {
+    margin-top: 0;
+}
+
+.image-text, .price, .author-name {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.user-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.25rem ;
+}
+
+.green {
+    color: #608A4D;
+}
+
+.price {
+    font-size: 1.375rem;
+    color: white;
+}
+
+.email {
+    text-decoration: underline;
+}
+
+.nav-list-item a {
+    font-size: 1.125rem;
+}
+
+small {
+    color: #6C7667;
+}
+
+.more-offers {
+    font-size: 1.625rem;
+} 
+
+/* ================
+     Layout
+================== */
+
+.nav-wrapper,
+.offer,
+.footer-logo-socials,
+.nav-list {
+    justify-content: space-between;
+}
+
+.secondary-nav-copyright, .left-col  {
+    text-align: center;
+}
+
+header, .hero, footer {
+    background-color: #E8F5E2;
+}
+
+.contacts, .offer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Header === */
+
+header {
+  border-bottom: 1px solid black;
+}
+
+.nav-wrapper {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+
+/* === hero === */
+
+.left-col, .right-col {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.users-photos img {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 0 -0.6em;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+ 
+.right-col {
+    padding-left: 2.375em;
+    padding-right: 2.375em;
+    border-top: 1px solid black;
+}
+
+.step {
+    gap: 1.4em;
+}
+
+.step svg {
+    align-self: flex-start;
+}
+
+/* Created my own dots but wont work in the tablet layout */
+
+/* ol {
+    list-style-type: decimal;  Change this to "decimal-leading-zero" for 01, 02, etc. 
+} */
+
+/* ol li {
+    z-index: 0;
+    position: relative;
+}
+
+ol li::marker {
+    content: counter(list-item) " ";
+    font-size: 1rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+ol li::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    left: -24px;
+    z-index: -1;
+}
+
+h3 {
+    margin-left: 1.25rem;
+} */
+
+
+/* ===Companies=== */
+
+.companies {
+    background-color: black;
+}
+
+.companies-wrapper {
+    padding-top: 3em;
+    height: 320px;
+}
+ 
+.companies-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.company {
+    justify-self: center;
+}
+
+/* ===Offers=== */
+
+.offers {
+    margin-top: -4em;
+
+}
+
+.offers-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 0.4em;
+}
+
+.offer {
+    width: 350px;
+    height: 205px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.offer-text {
+    background-color: white;  
+    padding: 1.2rem 1.2rem;  
+}
+
+.price {
+    align-self: flex-end;
+    background-color: black;
+    padding: 0.6em;
+}
+
+.more-offers {
+    margin: 4em auto 5em;
+}
+
+
+/* ===Footer=== */
+
+.socials, .nav-list {
+    display: flex;
+}
+
+.footer-wrapper {
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.socials {
+    gap: 1.3em;
+    margin-bottom: 0.8em;
+}
+
+.footer-logo {
+    align-self: flex-start;
+}
+
+.nav-list-secondary {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+small {
+    margin: 0 auto;
+}
+
+/* ================
+    Media Queries
+================  */
+
+/* ===Tablet=== */
+
+@media (min-width: 750px) {
+    .hide-mobile {
+        display: unset;
+    }
+
+    .wrapper {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .hide-tablet {
+        display: none;
+    }
+
+    /* ===Group=== */
+    
+    .user-testimonial, .steps, .right-col{
+        display: flex;
+    }
+
+    .right-col,.step,
+    .footer-logo-socials {
+        flex-direction: column;
+    }
+
+    /* ===Header=== */
+
+    .nav-list {
+        gap: 2em;
+    }
+
+    .logo {
+        align-self: flex-end;
+    }
+
+    /* ===Hero=== */
+    
+    h1 {
+        font-size: 2.8125rem;
+        position: relative;
+    }
+
+    h1::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        right: 50px;
+        background-image: url(./assets/star-grafic.png);
+        width: 65px;
+        height: 56px;
+    }
+
+    .left-col {
+        text-align: left;
+    }
+
+    .user-testimonial {
+        padding: 1em;
+        border-radius: 44.5px;
+        background-color: white;
+    }
+
+    .testimonial-quote {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .user-testimonial img {
+        width: 60px;
+        height: 60px;
+        margin-right: 1em;
+        border-radius: 50%;
+    }
+
+    .author-name {
+        color: #779469;
+        font-size: 0.875rem;
+    }
+
+    .users {
+        gap: 3em;
+    }
+
+    .step {
+        flex-basis: 33% ;
+    }
+
+    .steps {
+        flex-direction: row;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        gap: 4em;
+    }
+    
+    .primary-cta {
+        align-self: flex-start;
+        width: unset;
+        margin-left: 2.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .step svg {
+        align-self: flex-start;
+    }
+
+    /*===Companies  */
+
+    .companies-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ===Offers=== */
+
+    .offer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .offers-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 260px);
+        margin-top: -10em;
+    }
+
+    .offers-container .hide-mobile {
+        display: unset;
+    }
+
+    .more-offers {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* ===Footer===  */
+
+    .footer-logo-socials {
+        justify-content: space-around;
+        align-items: unset;
+        gap: 1em;
+    }
+
+    .footer-wrapper {
+        justify-content: space-between;
+    } 
+
+    .nav-list-secondary {
+        margin-top: 0;
+    }
+
+    .hide-tablet {
+        display: none;
+    }
+}
+
+    /* ===DESKTOP==== */
+
+@media (min-width: 1100px) {
+    .wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* ===group=== */
+    .desktop-helper, .offers-container {
+        display: grid;
+    }
+    
+    .step, button.more-brands {
+        flex-direction: row;
+    }
+
+    .wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* ===hero=== */
+
+    .desktop-helper {
+        grid-template-columns: 1.3fr 1fr;
+        max-width: 1300px;
+        margin: 0 auto  ;
+    }
+
+    .steps {
+        flex-direction: column;
+        flex-basis: unset;
+        gap: 1em;
+    }
+
+    .step {
+        align-items: center;
+        align-self: unset;
+    }
+
+    h1::after {
+        right: -30px;
+    }
+
+    .right-col {
+        border-top: 0;
+        border-left: 1px solid black;
+    }
+
+    .primary-cta {
+        margin-top: 1em
+    }
+
+    /* ===companies=== */
+ 
+    .companies-list {
+        grid-template-columns: repeat(5, 4fr) auto;
+    }
+
+    button.more-brands {
+        display: flex;
+        gap: 0.1em;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    /* ===offers=== */
+
+    .offers-container {
+        grid-template-columns: 2fr 1fr 1.5fr 1.6fr;
+        grid-template-rows: repeat(2, 260px);
+    }
+
+    .featured {
+        grid-column: 1 / 3;
+    }
+
+    .featured-2 {
+        grid-column: 2 / 4;
+    }
+
+}

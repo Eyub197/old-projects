@@ -1,0 +1,36 @@
+.dialog, .dialog::backdrop {
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+.dialog {
+    transition-property: display, transform, overlay;
+    transform: translate(0, 100vh);
+}
+
+.dialog::backdrop {
+    transition-property: display, transform, background-color;
+    transform: translate(0, 100vh);
+    background-color: rgba(0 0 0 / 0.5);
+}
+
+.dialog[open] {
+    transform: scale(1);
+}
+
+.dialog[open]::backdrop {
+    transform: translate(0, 0);
+}
+
+@starting-style {
+    .dialog[open] {
+        transform: scale(0);
+    }
+
+    .dialog[open]::backdrop {
+        background-color: transparent;  
+    }
+
+}
+

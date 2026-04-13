@@ -1,0 +1,55 @@
+@layer base, theme;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+      
+    input {
+        --default-color: #aaa;
+        --default-focus-color : #0af;
+        font-size: inherit;
+        padding: 0.5em;
+        outline: none;
+        border-radius: 0.2em;
+        border: 1px solid var(--default-color);
+    }
+    
+    input:focus-visible {
+        border-color: var(--default-focus-color);
+        box-shadow: 0 0 5px 0 var(--default-focus-color);
+    }
+
+    .input:disabled {
+        background-color: #eaeaea;
+        cursor: not-allowed;
+    }
+}
+
+
+@layer theme {
+    .input.input-success {
+        --default-color: #27ae60;
+    }
+      
+    .input.input-success:focus-visible {
+        --default-focus-color: #0f0;
+    }
+      
+    .input.input-error {
+        --default-color: #eb5757;
+    }
+    
+    .input.input-error:focus-visible {
+        --default-focus-color: #f00;
+    }
+      
+    .input.input-large {
+        font-size: 1.25rem;
+    }
+      
+    .input.input-small {
+        font-size: 0.75rem;
+    }
+}
+

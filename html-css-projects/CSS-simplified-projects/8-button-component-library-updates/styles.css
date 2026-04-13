@@ -1,0 +1,144 @@
+@layer base, theme;
+
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        --border-color: hsl(0, 0%, 70%);
+        --focus-color : hsl(0, 0%, 80%);
+        --background-color: hsl(0, 0%, 90%);
+        cursor: pointer;
+        padding: 0.5em 1em;
+        outline: none;
+        border-radius: 0.3em;
+        border: 1px solid var(--border-color);
+        background: var(--background-color);
+    }
+    
+    button:hover,
+    button:focus-visible {
+        background-color: var(--focus-color);
+        box-shadow: 0 0 5px 0 var(--border-color);
+    }
+
+    .btn-large {
+        font-size: 1.25rem;
+    }
+      
+    .btn-small {
+        font-size: 0.75rem;
+    }
+      
+    .btn-pill {
+        border-radius: 999999px;
+    }
+
+}
+
+@layer theme {
+    .btn-primary,
+    .btn-accent,
+    .btn-danger {
+        color: white;
+    }
+    
+    .btn-primary {
+        --border-color: hsl(271, 70%, 30%);
+        --focus-color: hsl(271, 70%, 40%);
+        --background-color: hsl(271, 70%, 50%);
+    }
+
+    .btn-accent {
+        --border-color: hsl(200, 100%, 20%);
+        --focus-color: hsl(200, 100%, 30%);
+        --background-color: hsl(200, 100%, 40%);
+    }
+
+    .btn-danger {
+        --border-color: hsl(0, 60%, 30%);
+        --focus-color: hsl(0, 60%, 40%);
+        --background-color: hsl(0, 60%, 50%);
+    }
+}
+
+
+  
+/* 
+
+Second way but I think the first one is more real-wordy
+@layer base, theme;
+
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        --hue: 0;
+        --saturation: 0%;
+        --lightless: 90%;
+        cursor: pointer;
+        padding: 0.5em 1em;
+        outline: none;
+        border-radius: 0.3em;
+        border: 1px solid hsl(var(--hue), var(--saturation), calc(var(--lightness) - 20%));
+        background: hsl(var(--hue), var(--saturation), var(--lightless));
+    }
+    
+    button:hover,
+    button:focus-visible {
+        background-color: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 10%));
+        box-shadow: 0 0 5px 0 hsl(var(--hue), var(--saturation), calc(var(--lightness) - 20%));;
+    }
+
+    .btn-large {
+        font-size: 1.25rem;
+    }
+      
+    .btn-small {
+        font-size: 0.75rem;
+    }
+      
+    .btn-pill {
+        border-radius: 999999px;
+    }
+
+}
+
+@layer theme {
+    .btn-primary,
+    .btn-accent,
+    .btn-danger {
+        color: white;
+    }
+    
+    .btn-primary {
+        --hue: 271deg;
+        --saturation: 70%;
+        --lightless: 50%;
+    }
+
+    .btn-accent {
+        --hue: 200deg;
+        --saturation: 100%;
+        --lightless: 40%;
+    }
+
+    .btn-danger {
+        --hue: 0deg;
+        --saturation: 60%;
+        --lightless: 50%;
+    }
+}
+
+
+  
+
+
+
+
+*/

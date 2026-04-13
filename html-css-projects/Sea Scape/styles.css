@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0C5AD;;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* typography */
+
+h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5.1875rem;
+}
+
+h2, p {
+    font-size: 0.75rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media (min-width: 550px) {
+    /* layout */
+
+    main, .features, .hero, .images {
+        display: grid;
+    }
+
+    .hero, .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main,  .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        grid-template-areas: 
+            "features features features"
+            "hero hero hero"
+            "images images images";
+        grid-template-rows: repeat(3, auto);
+        padding: 2.5em;
+        margin: 7em auto;
+    }
+    
+    .features {
+        padding-top: 2em;
+        grid-area: features;
+        gap: 2em;
+    }
+
+    .feature p {
+        width: 90%;
+    }
+
+    .hero {
+        grid-area: hero;
+        gap: 0.7em 1em;
+    }
+
+    .hero-headline {
+        grid-column: 1 / 3;
+    }
+
+    .images {
+        grid-area: images;
+        grid-template-rows: repeat(2, 180px);
+        gap: 0.2em;
+        margin-top: 2em;
+    }
+
+    .featured-image {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        grid-template-areas: 
+        "features features features"
+        "images hero hero"  
+        "images images images";
+
+        max-width: 1200px;
+        gap: 2em
+    }
+
+    .images {
+        margin-top: 0;
+        grid-row: 2/ 4;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 250px);
+        gap: 0;
+    }
+
+
+
+    .featured-image {
+        grid-row: 1 / 3;
+        grid-column: 1/ 2;
+    }
+    
+    .features {
+        padding-left: 2em;
+    }
+
+ 
+    .hero {
+        padding-left: 2em;
+        grid-column: 2 / 4;
+    }
+    
+    .image {
+     grid-row-start: 2;
+    }
+    
+    .hero p {
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 6.25rem
+    }
+
+}

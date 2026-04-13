@@ -1,0 +1,52 @@
+:root {
+   --default-color:  hsl(0, 0%, 66%);
+   --accent-color: hsl(200, 100%, 68%);
+   --success-color:  hsl(146, 65%, 41%);
+   --error-color: hsl(0, 79%, 63%);
+   --disabled-color: hsl(0, 0%, 92%);
+}
+
+
+input {
+    font-size:  inherit;
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid var(--default-color);
+}
+
+input:focus {
+    box-shadow: 0px 0px 6px var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+input[value="Success"] {
+    border-color: var(--success-color);
+}
+
+input[value="Success"]:focus {
+    box-shadow: 0px 0px 6px var(--success-color);
+}
+
+input[value="Error"] {
+    border-color: var(--error-color);
+}
+
+input[value="Error"]:focus {
+    box-shadow: 0px 0px 6px var(--error-color);
+}
+
+input[value="Large"] {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+input[value="Small"] {
+    padding: 6px;
+    font-size: 0.875rem;
+}
+
+input:disabled {
+    cursor: not-allowed;
+    background-color: var(--disabled-color);
+}

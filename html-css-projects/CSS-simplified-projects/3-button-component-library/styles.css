@@ -1,0 +1,89 @@
+:root {
+    --default-color-71: hsl(0, 0%, 71%);
+    --default-color-80: hsl(0, 0%, 80%);    
+    --default-color-90: hsl(0, 0%, 90%);
+
+    --primary-color-41:hsl(271, 71%, 41%);
+    --primary-color-50:hsl(271, 70%, 50%);
+
+    --accent-color-21: hsl(201, 94%, 21%);
+    --accent-color-30:hsl(200, 100%, 30%);
+    --accent-color-40: hsl(200, 100%, 40%);
+
+    --danger-color-30: hsl(0, 61%, 30%);
+    --danger-color-40:rgb(163, 41, 41);
+    --danger-color-50: hsl(0, 60%, 50%);
+
+
+} 
+
+* { box-sizing: border-box; }
+
+
+button {
+    cursor: pointer;
+    padding-inline: 10px;
+    padding-block: 6px;
+    border-radius: 3px;
+    border: 1px solid var(--default-color-71);
+    background-color: var(--default-color-90);
+}
+
+button:hover{
+    background-color: var(--default-color-80);
+    box-shadow: 0px 0px 4px var(--default-color-80);
+}
+
+button.primary, 
+button.accent, 
+button.danger {
+    color: white;
+}
+
+button.primary {
+    background-color: var(--primary-color-50);
+    border-color: var(--primary-color-41);
+}
+
+button.primary:hover {
+    background-color: var(--primary-color-41);
+    box-shadow: 0px 0px 4px var(--primary-color-41);
+}
+
+button.accent {
+    background-color: var(--accent-color-40);
+    border-color: var(--accent-color-21);
+}
+
+button.accent:hover {
+    background-color: var(--accent-color-30);
+    box-shadow: 0px 0px 4px var(--accent-color-21);
+}
+
+button.danger {
+    border-color: var(--danger-color-30);
+    background-color: var(--danger-color-50);
+}
+
+button.danger:hover {
+    background-color: var(--danger-color-40);
+    box-shadow: 0px 0px 4px var(--danger-color-40);
+} 
+
+button.large {
+    font-size: 1.2rem ;
+    padding-block: 10px;
+    padding-inline: 16px;
+    border-radius: 5px;
+}
+
+button.small {
+   font-size: 0.785rem;
+   padding-block: 4.5px;
+   padding-inline: 8.5px;
+   border-radius: 4px;
+}
+
+button.pill {
+    border-radius: 5000px;
+}
