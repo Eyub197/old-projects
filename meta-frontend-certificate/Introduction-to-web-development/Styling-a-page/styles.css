@@ -1,0 +1,31 @@
+body{
+    background-color: #E0E0E2;
+}
+
+h1, h2{
+    color: #721817;
+}
+
+.center-text {
+    text-align:  center;
+}
+
+#logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 span, #copyright{
+    font-size: 0.75em;    
+}
+
+h2 span {
+    color: #FA9F42;
+}
+
+#copyright{
+    padding-top: 12px;
+}
+
+/* will not work if group selectors are used but  I like it that way */
