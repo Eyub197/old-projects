@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form id="survey-form" class="form">
+    <fieldset>
+   <h1 id ="title">Survey Form</h1> 
+   <p id ="description">Welcome to my survey form please be kind and fill it</p>
+   <form id="survey form">
+    <label for="name" id="name-label">Name<br><input type="text" required id="name" placeholder="name" aria-placeholder="Your name"></label>
+    <label for="email" id="email-label">Email<br><input type="email" required id="email" name="email" placeholder="something@gmail.com"></label>
+    <label for="number" id="number-label">Age<br><input type="number" id="number"  pattern="{12,}" min="0" max="12" placeholder="your password"></label>
+</fieldset>
+<fieldset>
+    <h2>What type of learning you want</h2>
+    <label for="intense learning">Intense learning<input value="1" type="radio" class="inline" id="intense learning" name ="learning type"></label>
+    <label for="normal learning">Normal learning<input value="2" type="radio" class="inline" id="normal learning" name="learning type"></label>
+</fieldset>
+<fieldset>
+    <h2>Which of the following you struggle the most</h2>
+   <label for="Dating"></label><input type="checkbox" value="1" class="inline"></label>Dating
+   <label for="Depression"></label> <input type="checkbox" value="2" class="inline"></label>Depression
+   <label for="Strength"></label> <input type="checkbox" value="3" class="inline"></label>Strength
+   <label for="Dexterity"></label><input type="checkbox" value="4" class="inline"></label>Dexterity
+   <label for="Fighting"></label> <input type="checkbox" value="4" class="inline"></label>Fighting
+    </fieldset>
+<fieldset>
+   <h2>What do you want to improve on?</h2>
+    <select id="dropdown" for="dropdown" name="referrer">
+        <option value="">Mental health</option>
+        <option value="1">Fitness</option>
+        <option value="2">Finances</option>
+        <option value="3">Communication</option>
+        <option value="4">Sleep</option>
+        <option value="5">Other</option>
+    </select>
+    <label for="bio">Provide a short story of your life</label>
+    <textarea class = "textarea"name="bio" id="bio" cols="30 placeholder="I was bulled in high school...."  rows="10"></textarea>
+</fieldset>
+<input type="submit" id="submit">
+</form>
+</body>

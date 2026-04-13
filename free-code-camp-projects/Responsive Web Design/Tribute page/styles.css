@@ -1,0 +1,85 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 17px;
+}
+
+figcaption{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+main{
+    background-color: hsl(#F5F5F5 , 1, 0.5);
+}
+
+figure{
+    background-color: rgba(255, 165, 0, 0.5);
+    height: 570px;
+    max-height: 600px;
+    border-radius: 25pt 25pt 25pt 25pt;
+}
+
+img{  
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 75px;
+    display: block;
+    border-radius: 25pt 25pt 25pt 25pt;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/*
+ul {
+   margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  */
+
+  div.tribute-info{
+    display: flex;
+    align-items: center;
+  }
+
+  main {
+    max-width: 1280px;
+    max-height: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  #tribute-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #tribute-info > h2 {
+    text-align: center;
+  }
+  
+  #tribute-info > ul li {
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+
+h3{
+  font-size:px 15px;
+}
+
+#main > p {
+    text-align: center;
+  }
